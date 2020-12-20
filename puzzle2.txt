@@ -1,0 +1,123 @@
+## 12/13/2020	Advent Calender puzzle#2
+
+https://adventofcode.com/2020/settings#
+
+
+for Advent Code Puzzles, at https://adventofcode.com/
+(anonymous user #1279410)
+Provide 
+ 
+1279410-20201212-9b195723
+
+if you are asked to prove you own this account by an Advent of Code administrator. Don't post this code in a public place.
+
+-------------------"Password Philosophy"-------------------
+second puzzle:  find the passwords that comply with corp passwd policy:
+example from list:
+
+1-3 a: abcde
+1-3 b: cdefg
+2-9 c: ccccccccc
+here, the middle does not comply - there are not 1-3 "b's" in "cdefg
+
+C:\Users\SFF1\OneDrive - HP Inc\Documents\diary\AdventCalendar-Puzzles\input2.txt
+-----------------------------------
+python:
+
+linelist = [line.rstrip('') for line in open(r"C:\Users\SFF1\OneDrive - HP Inc\Documents\diary\AdventCalendar-Puzzles\input2.txt", "r")]
+
+linelist
+(skipping to end....:)
+rrdrrrrr\n', '10-11 g: jdgggcctgsg\n', '9-14 f: stfflfrpjfffhxff\n', '4-6 c: cccxcjcwc\n', '13-17 w: rwwwwkwwwgwgswxfpwwc\n', '7-9 g: ggggggcgrg\n', '6-10 j: fjmjjjjdjkjmj\n', '10-12 h: qswhkndjhqkh\n', '4-12 z: zfzzzzzzzzkzzzzzzz\n', '1-9 t: tqtttwtbxtgtzp\n', '13-14 p: bppppppvpkpbppppp\n', '7-11 m: phxfmmwmmwm\n', '4-14 d: ddddddhdddddcbddd\n', '1-6 l: mlllllll\n', '6-13 z: nzzzztzznjcckznz\n', '3-8 p: pppppppppppp\n', '10-17 r: rrrrrrrrrdrrrrrrrr\n', '15-18 j: bvswjgxvwdjcgdjqjjr\n', '5-6 q: rqqkqq\n', '7-15 k: kfkjsqlkzngkkvrmkzkv\n', '2-6 p: gpwhqpbpgdrprbbp\n', '1-7 x: rxxwxxxxxxrfxxfxqxx\n', '14-15 x: xxxxxxfxxxxxxxxxgxxx\n', '9-10 f: frskkfnffh\n', '1-11 s: qsssssspsssss\n', '4-11 g: zkxvrprgzxjcbg\n', '11-14 g: ggggggggggggggggg\n', '6-7 q: qqqqvqhq\n']
+
+------------------
+>>> len(linelist)
+1000
+
+-----------------
+for i int linelist:
+    print(i)
+
+(skipping to end...:)
+6-13 z: nzzzztzznjcckznz
+
+3-8 p: pppppppppppp
+
+10-17 r: rrrrrrrrrdrrrrrrrr
+
+15-18 j: bvswjgxvwdjcgdjqjjr
+
+5-6 q: rqqkqq
+
+7-15 k: kfkjsqlkzngkkvrmkzkv
+
+2-6 p: gpwhqpbpgdrprbbp
+
+1-7 x: rxxwxxxxxxrfxxfxqxx
+
+14-15 x: xxxxxxfxxxxxxxxxgxxx
+
+9-10 f: frskkfnffh
+
+1-11 s: qsssssspsssss
+
+4-11 g: zkxvrprgzxjcbg
+
+11-14 g: ggggggggggggggggg
+
+6-7 q: qqqqvqhq
+
+>>>
+----------------------------
+>>> for line in linelist:
+...     (freq, target, pswd) = line.split()
+...     print("freq= ", freq, "target= ", target, "pswd= ", pswd)
+...     print()
+
+(skipping to end....:)
+freq=  1-11 target=  s: pswd=  qsssssspsssss
+
+freq=  4-11 target=  g: pswd=  zkxvrprgzxjcbg
+
+freq=  11-14 target=  g: pswd=  ggggggggggggggggg
+
+freq=  6-7 target=  q: pswd=  qqqqvqhq
+
+--------------------
+------------------------
+validcount = 0
+
+for line in linelist:
+    (freq, target, pswd) = line.split()     # ['6-7'] , 'q:', 'qqqqvqhq'
+
+    freqlist = [ int(x) for x in freq.split('-') ]     # [6,7]
+    (atleast, upto) = tuple(freqlist)                  # (6, 7)
+    #print("atleast= ", atleast, "upto= ", upto)
+
+    target = target.strip(':')                         # 'q'
+    #print("targetchar: ", target)
+
+    #print("passwd= ", pswd)
+
+
+    count = 0
+    for i in pswd:
+        if i == target:
+            count += 1
+        else:
+            pass
+    #print("count= ", count)
+    if ( count >= atleast ) and (count <= upto):
+	print("Password valid! : ", pswd)
+        validcount += 1
+    else:
+        pass
+print()
+print("number of valid passwords found to be: ", validcount)
+
+
+
+
+
+
+

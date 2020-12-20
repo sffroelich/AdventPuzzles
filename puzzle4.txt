@@ -1,0 +1,16 @@
+## 12/15/2020	Advent Calender puzzle#3
+
+https://adventofcode.com/2020/settings#
+
+
+for Advent Code Puzzles, at https://adventofcode.com/
+(anonymous user #1279410)
+Provide 
+ 
+1279410-20201212-9b195723
+
+if you are asked to prove you own this account by an Advent of Code administrator. Don't post this code in a public place.
+
+------------------- "Passport Processing"----------------------
+fourth puzzle:  count the number of valid passports
+------------------------------------------------------------------------------
