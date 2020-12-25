@@ -1,0 +1,3 @@
+shiny gold bags contain 1 dark red bags, 1 dark violet bags.
+dark red bags contain 1 dark violet bags.
+dark violet bags contain no other bags.

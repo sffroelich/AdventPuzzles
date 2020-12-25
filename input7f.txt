@@ -1,0 +1,8 @@
+ff 3 bags contain  no other bags.
+ff 2 bags  contain 1 fff 1 bag.
+ff 1 bags contain 1 shiny gold bag.
+fff 1 bag  contain 1 shiny  gold bag.
+f 3 bags contain 11 shiny gold bags.
+f 2  bags contain 10 ff 1 bags, 10 ff 2 bags, 10 ff 3 bags.
+f 1  bags contain no other bags.
+F  0 bags contain 100 f 1 bags, 50 f 2 bags, 25 f 3 bags.

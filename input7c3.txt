@@ -1,0 +1,4 @@
+shiny gold bags contain 1 c 1 bags.
+c 1 bags contain 1 cc 1 bags, 1 cc 2 bags, 1 shiny gold bags.
+cc 2 bags contain no other bags.
+cc 1 bags contain no other bags.

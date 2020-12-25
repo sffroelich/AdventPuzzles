@@ -1,0 +1,34 @@
+## 12/21/2020	Advent Calender puzzle#3
+
+https://adventofcode.com/2020/settings#
+
+for Advent Code Puzzles, at https://adventofcode.com/
+(anonymous user #1279410)
+Provide 
+ 
+1279410-20201212-9b195723
+
+if you are asked to prove you own this account by an Advent of Code administrator. Don't post this code in a public place.
+
+------------------- "Handy Haversacks"----------------------
+seventh puzzle:  how many bag colors can contain one shiny gold bag?
+---------------------------------------------------------------
+(uses "input7") - has 595 ascii lines, with a blank line last
+
+beginning:
+light salmon bags contain 5 dotted olive bags, 4 wavy lavender bags.
+dark purple bags contain 5 striped maroon bags, 1 wavy maroon bag.
+muted lime bags contain 4 drab lavender bags, 1 clear orange bag, 2 striped black bags.
+light green bags contain 5 dull gray bags, 3 dark crimson bags.
+bright violet bags contain 1 bright purple bag.
+dotted magenta bags contain 2 wavy beige bags, 1 dotted bronze bag.
+
+
+ending:
+
+dull white bags contain no other bags.
+pale green bags contain 4 bright green bags, 2 dull lime bags, 1 striped lime bag.
+muted bronze bags contain 5 bright tomato bags, 5 light red bags, 2 shiny yellow bags, 2 dim teal bags.
+mirrored aqua bags contain 3 dim tomato bags, 1 mirrored crimson bag, 1 wavy silver bag.
+vibrant magenta bags contain 2 dark lime bags.
+======================================================================

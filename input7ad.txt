@@ -1,0 +1,8 @@
+A 0 bags contain 1 shiny gold bag.
+B 0 bags contain 2 b 1 bags, 1 shiny gold bag, 2 b 2 bags.
+b 1 bags contain no other bags.
+b 2 bags contain no other bags.
+C 0 bags contain 3 c 1 bags.
+c 1 bags contain 20 shiny gold bags.
+D 0 bags contain 12 shiny gold bags, 12 d 1 bags.
+d 1 bags contains 1 shiny gold bag.

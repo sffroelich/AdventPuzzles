@@ -1,0 +1,3 @@
+C 0 bags contain 3 c 1 bags.
+cc 1 bags contain 20 shiny gold bags.
+c 1 bags contain 2 cc 1 bags.

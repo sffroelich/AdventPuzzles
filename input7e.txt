@@ -1,0 +1,6 @@
+eee 1 bags contain no other bags.
+E 0 bags contain 100 e 1 bags.
+ee 1 bags contain 5 eee 1 bags, 3 shiny gold bags.
+ee 2 bags contain 10 eee 2 bags.
+eee 2 bags contain no other bags.
+e 1 bags contain 3 ee 1 bags, 5 ee 2 bags.
